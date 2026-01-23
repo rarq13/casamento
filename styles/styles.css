@@ -1,0 +1,298 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* COLORS */
+.peach { background-color: #FDCEB2; }
+.pink { background-color: #FCADA9; }
+.light-blue { background-color: #a4cadd; }
+.navy-blue { background-color: #6c9ebd; }
+.orange { background-color: #faad91; }
+.yellow { background-color: #fdf7a7; }
+.blue-background { background-color: #e8f3fca8; color:#6c9ebd;}
+
+/* Tipografia */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  color: white;
+  font-size: 12px;
+}
+
+a{
+	text-decoration:none;
+	color: white;
+}
+
+.strong{
+	font-weight: 700;
+}
+
+.font-xxl { font-size: 64px; }
+.font-xl { font-size: 32px; }
+.font-l { font-size: 24px; }
+.font-m { font-size: 16px; }
+
+.center { text-align: center; }
+
+/* Paddings */
+.pb-12 { padding-bottom: 12px; }
+.pb-24 { padding-bottom: 24px; }
+.pd-0 { padding: 0; }
+
+/* HERO */
+.hero-section {
+  height: 80vh;
+  background-image: url("../images/background.png");
+  background-position: center;
+}
+
+.hero-content {
+  position: relative;
+  height: 100%;
+}
+
+.hero-title {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.mask{
+    width: 100%;
+    height: 80%;
+    opacity: 24%;
+    background: #546471;
+    position: absolute;
+    top: 0;
+}
+
+.title {
+  font-family: "Pinyon Script", cursive;
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding-inline: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/* BUTTON */
+.primary-button {
+  padding: 12px;
+  border: 2px solid white;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.primary-button:hover {
+  background-color: rgba(255, 255, 255, 0.351);
+}
+
+/* LAYOUT */
+.two-column {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 16px;
+}
+
+.column-one,
+.column-two {
+  width: 100%;
+}
+
+.column-one {
+  padding-bottom: 12px;
+}
+
+.column-two {
+  padding-top: 12px;
+}
+
+.column-one .subtitle {
+  padding-bottom: 0;
+}
+
+.column-two .subtitle {
+  padding-bottom: 8px;
+}
+
+/* PROGRAM */
+.program-info {
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid white;
+}
+
+.hour {
+  padding-right: 8px;
+  font-family: "Quattrocento", serif;
+}
+
+.info-title {
+  font-weight: bold;
+  font-family: "Quattrocento", serif;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+}
+
+/* IMAGES */
+.big-image {
+  width: 100%;
+  height: auto;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+/* INFORMATIONS */
+.informations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 16px;
+  align-items: center;
+}
+
+.other-info{
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.logo{
+    max-width: 200px;
+}
+
+#countdown {
+    font-family: "Quattrocento", serif;
+	padding-top:32px;
+}
+
+/* COLOURS */
+.colour-palette {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.colour {
+  width: 32px;
+  height: 32px;
+}
+
+/* CONTACTS */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 32px 16px;
+  font-family: "Quattrocento", serif;
+}
+
+.contacts .title {
+  text-align: center;
+}
+
+.contacts-img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.contacts.blue-background .title {
+  font-size: 32px;
+}
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.number{
+    line-height: normal;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .font-xxl {
+    font-size: 80px;
+  }
+  
+  .font-s{
+	  font-size:16px;
+  }
+  
+  .font-m{
+	  font-size:20px;
+  }
+
+  .two-column {
+    flex-direction: row;
+    padding: 64px 32px;
+  }
+
+  .column-one,
+  .column-two {
+    width: 50%;
+  }
+
+  .column-one {
+    padding-right: 16px;
+    padding-bottom: 0;
+  }
+
+  .column-two {
+    padding-left: 16px;
+    padding-top: 0;
+  }
+
+  .column-one .subtitle,
+  .column-two .subtitle {
+    padding-bottom: 24px;
+  }
+
+  .hero-bottom {
+    padding-inline: 32px;
+  }
+
+  .contacts {
+    padding: 64px 32px;
+  }
+
+  .contacts.blue-background .title {
+    font-size: 48px;
+  }
+  
+  .informations {
+  gap: 32px;
+}
+}
+
