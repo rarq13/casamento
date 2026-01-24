@@ -17,5 +17,5 @@ const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
 
 document.getElementById("countdown").innerHTML =
     `FALTAM ${dias} DIAS E 
-    ${horas} HORAS`;
+    ${horas} HORAS!`;
 }, 1000);
