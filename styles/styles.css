@@ -68,7 +68,7 @@ a{
 
 .mask{
     width: 100%;
-    height: 80%;
+    height: 80vh;
     opacity: 24%;
     background: #546471;
     position: absolute;
